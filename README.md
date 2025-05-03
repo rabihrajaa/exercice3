@@ -4,15 +4,12 @@
 - Apprendre à gérer l’asynchronisme avec `Future`, `async`, et `await`
 - Comprendre les différences avec Java et JavaScript
 
----
-
 ## Description du fonctionnement
 
 1. Une fonction `fetchData()` utilise `Future.delayed` pour simuler une attente de 2 secondes.
 2. Dans `main()`, on affiche `Loading...`, puis on attend `fetchData()` avec `await`.
 3. Une fois les données récupérées, on affiche `Données reçues`.
 
----
 
 ## Comparaisons avec Java et JavaScript
 
@@ -32,8 +29,6 @@ try {
 
 * `Thread.sleep()` bloque le thread principal (non asynchrone)
 * Gestion plus complexe si on veut un vrai comportement non bloquant (via `FutureTask`, `ExecutorService`, etc.)
-
----
 
 ### ➤ En JavaScript (ES6) :
 
@@ -66,7 +61,6 @@ main();
   <img src="result.PNG" width="500" />
 </p>
 
----
 
 **Conclusion** :
 
